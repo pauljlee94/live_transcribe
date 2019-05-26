@@ -28,6 +28,12 @@ recognition.addEventListener('result', e => {
       p = document.createElement('p');
       words.appendChild(p);
     }
+
+    if (transcript.contains('change font size')) {
+      fontChanger();
+    } else if (transcript.contains('change screen color')) {
+      colorChanger();
+    }
 });
 
 function start() {
