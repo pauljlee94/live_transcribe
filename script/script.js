@@ -29,7 +29,7 @@ recognition.addEventListener('result', e => {
       words.appendChild(p);
     }
 
-    if (transcript.contains('change font size')) {
+    if (transcript.includes('change font size')) {
       fontChanger();
     } else if (transcript.contains('change screen color')) {
       colorChanger();
